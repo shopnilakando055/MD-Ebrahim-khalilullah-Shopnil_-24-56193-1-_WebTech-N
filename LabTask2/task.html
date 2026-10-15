@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>seventeen form</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<form>
+<h1> REGISTER FORM </h1>
+<div>
+<label for="fullname">Full name:</label>
+<input type="text" name="full name" id="fullname" required>
+</div><br>
+<div>
+<label for="password">Password:</label>
+<input type="password" name="password" id="password">
+</div><br>
+<div>
+<label for="dob">Date of birth:</label>
+<input type="date" name="dob" id="dob">
+</div><br>
+<div>
+<label for="photo">Choose your Photo:</label>
+<input type="file" name="photo" id="photo">
+</div><br>
+<div>
+<label>Gender:</label>
+<input type="radio" id="gender1" name="gender" value="Male"> Male
+<input type="radio" id="gender2" name="gender" value="Female"> Female
+</div><br>
+<div>
+<label>Religion:</label>
+<input type="checkbox" name="r1" id="r1" value="Islam"> Islam
+<input type="checkbox" name="r2" id="r2" value="Hindu" checked> Hindu
+</div><br>
+<div>
+<label for="department">Department:</label>
+<select name="department" id="department">
+<option value="CSE">CSE</option>
+<option value="EE" selected>EEE</option>
+</select>
+</div><br>
+<div>
+<label for="address">Write down the address:</label>
+<textarea id="address" cols="15" rows="15"></textarea>
+</div><br>
+<div>
+<input type="submit" value="Register">
+<input type="reset" value="Clear">
+</div><br>
+</form>
+</body>
+</html>
+
