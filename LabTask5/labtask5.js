@@ -165,7 +165,7 @@ function validateForm() {
         isValid = false;
     }
 
-    // 11. Family Add-ons Validation
+    
     let addOnsVal = document.getElementById("familyAddons").value;
     let addOnsNum = Number(addOnsVal);
     if (addOnsVal === "" || isNaN(addOnsNum) || addOnsVal.indexOf(".") !== -1 || addOnsNum < 0 || addOnsNum > 3) {
