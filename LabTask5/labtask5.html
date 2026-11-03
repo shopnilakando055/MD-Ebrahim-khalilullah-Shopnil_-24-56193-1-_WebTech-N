@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>City Gym Membership</title>
+<link rel="stylesheet" href="labtask5.css">
+</head>
+<body>
+
+<header>
+<h1>City Gym Membership</h1>
+</header>
+
+<main>
+<!-- Fee Table -->
+<table class="fee-table">
+<thead>
+<tr>
+<th>Item</th>
+<th>Fee (Taka)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Monthly Plan</td>
+<td>1500</td>
+</tr>
+<tr>
+<td>Quarterly Plan</td>
+<td>4000</td>
+</tr>
+<tr>
+<td>Yearly Plan</td>
+<td>14000</td>
+</tr>
+<tr>
+<td>Family Add-on (each)</td>
+<td>500</td>
+</tr>
+</tbody>
+</table>
+
+<!-- Membership Form -->
+<form id="gymForm" novalidate onsubmit="return validateForm()">
+
+<h3>Personal Details</h3>
+<br>
+
+<div>
+<label for="fullName">Full Name:</label>
+<input type="text" id="fullName" name="fullName">
+<div id="fullNameError" class="error-msg"></div>
+</div><br>
+
+<div>
+<label for="age">Age:</label>
+<input type="number" id="age" name="age">
+<div id="ageError" class="error-msg"></div>
+</div><br>
+
+<div>
+<label for="mobile">Mobile Number:</label>
+<input type="text" id="mobile" name="mobile">
+<div id="mobileError" class="error-msg"></div>
+</div><br>
+
+<div>
+<label for="email">Email:</label>
+<input type="text" id="email" name="email">
+<div id="emailError" class="error-msg"></div>
+</div><br>
+
+<div>
+<label for="password">Password:</label>
+<input type="password" id="password" name="password">
+<div id="passwordError" class="error-msg"></div>
+</div><br>
+
+<div>
+<label for="confirmPassword">Confirm Password:</label>
+<input type="password" id="confirmPassword" name="confirmPassword">
+<div id="confirmPasswordError" class="error-msg"></div>
+</div><br>
+
+<h3>Membership Plan</h3>
+<br>
+
+<div>
+<label for="plan">Plan:</label>
+<select id="plan" name="plan">
+<option value="Select Plan">Select Plan</option>
+<option value="Monthly">Monthly</option>
+<option value="Quarterly">Quarterly</option>
+<option value="Yearly">Yearly</option>
+</select>
+<div id="planError" class="error-msg"></div>
+</div><br>
+
+<div>
+<label for="startDate">Start Date:</label>
+<input type="date" id="startDate" name="startDate">
+<div id="startDateError" class="error-msg"></div>
+</div><br>
+
+<div>
+<label>Workout Time:</label><br>
+<input type="radio" name="workoutTime" value="Morning"> Morning
+<input type="radio" name="workoutTime" value="Afternoon"> Afternoon
+<input type="radio" name="workoutTime" value="Evening"> Evening
+<div id="workoutTimeError" class="error-msg"></div>
+</div><br>
+
+<div>
+<label for="mainTrainer">Main Trainer:</label>
+<select id="mainTrainer" name="mainTrainer">
+<option value="Select Trainer">Select Trainer</option>
+<option value="Rafi">Rafi</option>
+<option value="Mitu">Mitu</option>
+<option value="Sabbir">Sabbir</option>
+<option value="Joya">Joya</option>
+</select>
+<div id="mainTrainerError" class="error-msg"></div>
+</div><br>
+
+<div>
+<label for="backupTrainer">Backup Trainer:</label>
+<select id="backupTrainer" name="backupTrainer">
+<option value="Select Trainer">Select Trainer</option>
+<option value="Rafi">Rafi</option>
+<option value="Mitu">Mitu</option>
+<option value="Sabbir">Sabbir</option>
+<option value="Joya">Joya</option>
+</select>
+<div id="backupTrainerError" class="error-msg"></div>
+</div><br>
+
+<div>
+<label for="familyAddons">Family Add-ons:</label>
+<input type="number" id="familyAddons" name="familyAddons" value="0">
+<div id="familyAddonsError" class="error-msg"></div>
+</div><br>
+
+<div>
+<input type="checkbox" id="termsCheck" onchange="toggleSubmitButton(this)"> I am medically fit to exercise and I accept the gym rules.
+</div><br>
+
+<div>
+<button type="submit" id="submitBtn" >Join Now</button>
+<div id="finalMessage" class="success-box"></div>
+</div><br>
+
+</form>
+</main>
+
+<script src="labtask5.js"></script>
+</body>
+</html>
